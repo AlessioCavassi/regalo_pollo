@@ -19,7 +19,7 @@ const description = "Piccolo gioco di Natale a indovinelli per scoprire gli indi
           <h1>{pageTitle}</h1>
         </div>
         <p>
-          È la vigilia di Natale e questo gioco è pensato solo per te.
+          Questo gioco è pensato solo per te.
           Leggi gli indovinelli sullo schermo, fai i piccoli movimenti richiesti
           e lascia che chi è con te ti aiuti a costruire, bendato, un regalo segreto sul pavimento.
         </p>
@@ -109,34 +109,19 @@ const description = "Piccolo gioco di Natale a indovinelli per scoprire gli indi
 
       const steps = [
         {
-          title: "1 · Re della casa in movimento",
+          title: "1 · Dal calcio al tennis",
           prompt: `INDOVINELLO 1
-In questa casa c e qualcuno che non sta mai fermo:
-lava, cucina, sistema e corre da una stanza all altra.
-Leggi ad alta voce e poi fai qualche passo come se stessi passando lo straccio sul pavimento.
-Solo dopo il movimento, premi "Mostra indizio" qui sotto per scoprire dove andare.`,
-          build: `Quando Pierpaolo torna con il primo bigliettino, non leggetelo ad alta voce.
-Guardate il piccolo disegno sul foglio: per voi è la traccia principale di una mappa segreta.
-Fate sapere al gruppo che per questo primo livello l oggetto dell indovinello sarà la "linea lunga": dopo averlo fatto sedere o girare, chiedetegli di tornare nel punto dell indizio e scegliere un oggetto che secondo lui rappresenta bene la scena (senza dirgli perché).
-Quando rientra, fatevelo consegnare e guidatelo ad appoggiarlo a terra seguendo la direzione del disegno, come una singola traccia lunga della mappa.
-Se volete, potete decidere che questa prima traccia valga una o più "lunghezze" di quello stesso oggetto, aggiungendone altri uguali accanto finché la mappa vi convince, senza mai nominare figure o regali.`,
-          clue: `Nel regno di piatti, spugne e sapone,
-tra acqua che scorre e un po' di schiumone,
-c e un biglietto che aspetta nascosto bene:
-cercalo dove lavi pentole, piatti e posate ogni sere.
-Quando lo trovi, riportalo al gruppo senza farlo leggere a nessun altro.`
-        },
-        {
-          title: "2 · Dal calcio al tennis",
-          prompt: `INDOVINELLO 2
 Una volta il rumore era quello del pallone sul cemento,
 oggi e il colpo pulito di una racchetta in movimento.
 Leggi e poi mima un servizio di tennis: lancio della pallina e colpo deciso.
 Quando hai finito il servizio, premi "Mostra indizio" per continuare.`,
-          build: `Quando Pierpaolo porta il secondo bigliettino, tenetelo per voi.
-Sul foglio vedete un nuovo segno che non mostra quello di prima.
-Scegliete per questo livello uno o più oggetti di scena diversi dal primo (che parlino un po di sport, se vi piace) e fate aggiungere a Pierpaolo una nuova linea a terra ispirandovi al disegno.
-Potete decidere se questa traccia vale più o meno "unità" rispetto a quella della cucina, usando una combinazione degli oggetti di scena che avete scelto, senza mai parlare di rettangoli o numeri.`,
+          build: `Quando Pierpaolo porta il primo bigliettino, leggetelo tra di voi senza spiegargli ancora cosa state combinando.
+Scegliete insieme una zona del pavimento dove costruirete la vostra figura segreta e fate in modo che, quando Pierpaolo è senza benda, quella zona resti nascosta dai corpi delle persone in piedi intorno.
+Spiegategli che durante i tragitti per cercare i biglietti e leggere il telefono potrà togliersi la benda, ma ogni volta che torna nella zona di gioco dovrà rimetterla.
+Per voi questo livello serve a creare una prima linea lunga a terra, che userete come misura di riferimento.
+Fategli scegliere una racchetta (o un oggetto sportivo lungo) e guidatelo ad appoggiarla a terra ben dritta.
+Se vi sembra troppo corta, potete fargli prendere un altro oggetto simile (un'altra racchetta, la borsa da tennis, un asciugamano lungo...) e metterlo in fila, attaccato alla racchetta, finche ottenete una linea lunga e diritta.
+Non parlate di forme precise: per lui sono solo gesti, per voi la prima linea della vostra figura segreta.`,
           clue: `C era il pallone, ora c e la racchetta,
 che aspetta silenziosa la prossima partita perfetta.
 Vicino alla borsa da sport o dove riposa il tuo tennis fedele,
@@ -144,15 +129,31 @@ troverai il biglietto con il prossimo segreto da svelare.
 Quando lo trovi, riportalo di nuovo al gruppo in silenzio.`
         },
         {
+          title: "2 · Re della casa in movimento",
+          prompt: `INDOVINELLO 2
+In questa casa c e qualcuno che non sta mai fermo:
+lava, cucina, sistema e corre da una stanza all altra.
+Leggi ad alta voce e poi fai qualche passo come se stessi passando lo straccio sul pavimento.
+Solo dopo il movimento, premi "Mostra indizio" qui sotto per scoprire dove andare.`,
+          build: `Con il secondo bigliettino potete aggiungere un altra linea lunga, più o meno della stessa lunghezza della racchetta.
+Prendete solo oggetti di cucina lunghi e maneggevoli (forchette, cucchiai, mestoli, coltelli...) e fate in modo che Pierpaolo li appoggi a terra in fila, ben dritti.
+Se un singolo oggetto e più corto della racchetta, fategliene prendere due, tre o quattro e metterli uno dopo l'altro, finché a colpo d'occhio le due linee lunghe vi sembrano della stessa misura.`,
+          clue: `Nel regno di piatti, spugne e sapone,
+tra acqua che scorre e un po' di schiumone,
+c e un biglietto che aspetta nascosto bene:
+cercalo dove lavi pentole, piatti e posate ogni sere.
+Quando lo trovi, riportalo al gruppo senza farlo leggere a nessun altro.`
+        },
+        {
           title: "3 · Meglio fuori che sul divano",
           prompt: `INDOVINELLO 3
 Dove ti senti davvero te stesso: chiuso in casa o con le scarpe gia pronte alla porta?
 Leggi e poi fai qualche passo sul posto come se stessi infilando le scarpe per uscire.
 Quando hai fatto qualche passo, premi "Mostra indizio" per scoprire dove andare.`,
-          build: `Con il terzo bigliettino il disegno inizia a sembrare ancora più strano.
-Il gruppo prende gli oggetti di scena morbidi che avete scelto (magliette, sciarpe, asciugamani, cappelli...) e riempie un po lo spazio tra le linee che avete già creato, seguendo la sensazione del disegno sul foglio.
-Pierpaolo deve solo eseguire i vostri comandi, senza mai vedere il risultato.
-Se volete, potete inventare una vostra "unità" per questo livello (una lunghezza di sciarpa, due cappelli, tre magliette) e usarla per decidere dove farlo fermare o quanto deve essere lunga una parte della mappa.`,
+          build: `Con il terzo bigliettino tracciate una linea più corta sul lato ancora aperto della vostra figura.
+Usate scarpe, ciabatte o stivaletti per disegnare questa linea: fate mettere a Pierpaolo le scarpe in fila, punta contro tallone, cosi la traiettoria resta dritta.
+Se una scarpa e troppo corta, potete usarne due in fila per arrivare alla misura che vi sembra giusta.
+Lasciate lo spazio interno della figura vuoto: l altro lato corto arrivera solo con il prossimo indizio.`,
           clue: `Per uno che in casa non riesce a stare,
 la porta è sempre pronta a farti passare.
 Vicino alle scarpe o al posto dove lasci le sneaker al rientro,
@@ -166,10 +167,12 @@ Tra luci di Natale e valigie pronte,
 le tue foto raccontano piu aeroporti che salotti.
 Leggi e poi mima il gesto di tirare un trolley verso una nuova avventura.
 Quando hai finito di trascinare il tuo trolley immaginario, premi "Mostra indizio" per la prossima missione.`,
-          build: `Il quarto bigliettino porta un disegno ancora diverso.
-Per questo livello scegliete oggetti di scena che parlino di viaggi (valigie piccole, zainetti, beauty case, cuscini da volo...) e usateli per aggiungere nuove tracce ispirate al foglio.
-Ogni volta che Pierpaolo si muove o appoggia qualcosa seguendo le vostre istruzioni, per lui sarà solo una serie di gesti, per voi una mappa che prende forma.
-Potete decidere che uno di questi oggetti valga come "lato lungo" della vostra mappa e usare gli altri per riempire o allungare le zone che vi divertono di più.`,
+          build: `Con il quarto bigliettino potete chiudere la vostra cornice.
+Cercate souvenir di viaggio che potete mettere in fila (magliette con scritte di citta, foulard o sciarpe comprate in viaggio, teli mare, strofinacci con monumenti, piccole guide o cartoline rigide) e fate in modo che Pierpaolo li appoggi a terra uno dopo l altro, con i bordi che si toccano.
+Se usate magliette, teli o foulard, arrotolateli o piegateli a striscia in modo che diventino una linea più leggibile.
+Usateli per tracciare l ultima linea più corta, quella che collega tra loro le estremita libere delle due linee lunghe.
+Se un singolo souvenir e corto, usatene due, tre o quattro in fila per arrivare alla lunghezza che vi serve.
+Anche qui non nominate forme precise: per lui sono solo movimenti, per voi la figura finale che si chiude.`,
           clue: `Chi ama partire ha sempre una valigia a portata di mano,
 pronta per un weekend o magari per un lungo piano.
 Cerca il biglietto vicino al trolley o allo zaino da viaggio,
